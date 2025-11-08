@@ -4,7 +4,7 @@
 
 ## Projects
 
-| Project                                                              | Description                                         | Live Demo | Repo |
-| -------------------------------------------------------------------- | --------------------------------------------------- | --------- | ---- |
-| [Server Performance Stats](https://roadmap.sh/projects/server-stats) | write a script to analyse server performance stats. | XXX       | XXXX |
-| [Log Archive Tool](https://roadmap.sh/projects/basic-html-website)   | Simple website to practice HTML structure           | XXX       | XXXX |
+| Project                                                              | Description                                              | Live Demo | Repo |
+| -------------------------------------------------------------------- | -------------------------------------------------------- | --------- | ---- |
+| [Server Performance Stats](https://roadmap.sh/projects/server-stats) | Script to analyse server performance stats.              | XXX       | XXXX |
+| [Log Archive Tool](https://roadmap.sh/projects/log-archive-tool)     | Tool to archive logs from the CLI with the date and time | XXX       | XXXX |
