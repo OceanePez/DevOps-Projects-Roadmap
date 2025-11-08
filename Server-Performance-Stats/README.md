@@ -1,0 +1,12 @@
+To ensure optimal optimization, we have to monitoring : 
+- CPU usage
+- Request per second
+- Average response time rate
+- Server-side processing time
+- Error rates
+- Memory usage
+- Disk usage
+- Network throughput
+- Database query performance
+- Cache hit ratio
+- Application-specific metrics
