@@ -1,4 +1,4 @@
-# Log Archive Tool
+# GitHub-Pages-Deployment
 
 This project is related to the website [roadmap.sh] : [GitHub Pages Deployment](https://roadmap.sh/projects/github-pages-deployment)
 
@@ -19,12 +19,3 @@ cd DevOps-Projects-Roadmap/GitHub-Pages-Deployment
 ```
 
 You can see the website live demo here : https://oceanepez.github.io/DevOps-Projects-Roadmap/
-
-## Usage
-
-- Give Permission and Run the script
-
-```bash
-chmod +x log-archive
-./log-archive.sh <path-to-log>
-```
