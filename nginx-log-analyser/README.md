@@ -1,6 +1,6 @@
 # Nginx Log Analyser
 
-This project is related to the website [roadmap.sh] : [Log Archive Tool](https://roadmap.sh/projects/log-archive-tool)
+This project is related to the website [roadmap.sh] : [Nginx Log Analyser](https://roadmap.sh/projects/nginx-log-analyser)
 
 ## Installation
 
