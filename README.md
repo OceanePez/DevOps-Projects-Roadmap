@@ -8,3 +8,8 @@
 | -------------------------------------------------------------------- | -------------------------------------------------------- | --------- | ---- |
 | [Server Performance Stats](https://roadmap.sh/projects/server-stats) | Script to analyse server performance stats.              | XXX       | XXXX |
 | [Log Archive Tool](https://roadmap.sh/projects/log-archive-tool)     | Tool to archive logs from the CLI with the date and time | XXX       | XXXX |
+| [Nginx Log Analyser](https://roadmap.sh/projects/nginx-log-analyser) | Tool to analyse Nginx logs with various metrics         | XXX       | XXXX |
+
+
+
+    
