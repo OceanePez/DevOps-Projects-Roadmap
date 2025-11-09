@@ -18,6 +18,8 @@ git clone --depth=1 https://github.com/OceanePez/DevOps-Projects-Roadmap.git
 cd DevOps-Projects-Roadmap/GitHub-Pages-Deployment
 ```
 
+You can see the website live demo here : https://oceanepez.github.io/DevOps-Projects-Roadmap/
+
 ## Usage
 
 - Give Permission and Run the script
