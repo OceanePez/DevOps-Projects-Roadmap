@@ -7,7 +7,7 @@ echo "|''''''''''''''''''''''Log Archive Tool''''''''''''''''''''''|"
 echo "| This script archives logs from the CLI with the date and   |"
 echo "| time.                                                      |"
 echo "|                                                            |"
-echo "|           <Date and Time>                                             |"
+echo "|                                                            |"
 echo "|                                                            |"
 echo "| Author:@OcePez                                             |"
 echo "|____________________________________________________________|"
@@ -57,16 +57,18 @@ verify_arguments(){
     date_to_backup=${date_to_backup:-$DAYS_TO_BACKUP}
     format=${format:-$COMPRESSION_FORMAT}
 }
-
+   give_arguments_please
+    verify_arguments
 #Get and verify arguments
 while true; do
-    give_arguments_please
-    verify_arguments
     echo "You will be archiving logs from $directory to $output_dir, keeping logs for $date_to_keep days and backing up logs older than $date_to_backup days in $format format."
     echo "Do you agree to proceed? (y/n) You can also stop the script (stop)."
     read proceed
     if [ "$proceed" == "y" ]; then
         break
+    elif [ "$proceed" == "n" ]; then
+        give_arguments_please
+        verify_arguments
     elif [ "$proceed" == "stop" ]; then
         echo "Script stopped by user."
         exit 0
@@ -120,11 +122,12 @@ else
     read -p "Cron schedule: " cron_schedule
 
     # Get the full path to this script (so cron can find it)
-    script_path="./log-archive-for-cron.sh"
+    script_path="$(realpath ./log-archive-for-cron.sh)"
+    bash_path="$(which bash)"
+    # Add cron job safely and redirect output to a log file
+    (crontab -l 2>/dev/null; echo "$cron_schedule $bash_path $script_path >> /tmp/log_archive_cron.log 2>&1") | crontab -
 
-    # Backup existing crontab and append new job
-    (crontab -l 2>/dev/null; echo "$cron_schedule bash $script_path") | crontab -
-    echo "It will run at schedule: $cron_schedule"
+    echo "It will run at schedule: $cron_schedule" # crontab -l to verify
 fi
 
 
