@@ -1,7 +1,8 @@
 #!/bin/bash
-file=""
 if [ $# -ne 1 ]; then
-    $file="nginx-access.log"
+    file="nginx-access.log"
+else
+    file=$1
 fi
 
 echo "Top 5 IP addresses with the most requests:"
