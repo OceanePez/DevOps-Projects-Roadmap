@@ -10,3 +10,4 @@
 | [Log Archive Tool](https://roadmap.sh/projects/log-archive-tool)               | Tool to archive logs from the CLI with the date and time | Test with mail confirmed               | [yes]    |
 | [Nginx Log Analyser](https://roadmap.sh/projects/nginx-log-analyser)           | Tool to analyse Nginx logs with various metrics          | Add more visualizations                | [yes]    |
 | [GitHub Pages Deployment](https://roadmap.sh/projects/github-actions-deployment-workflow) | Guide to deploy a static website on GitHub Pages         | Add more themes options(Jekyll)/ HTTPS | [yes]    |
+| [Static site Server](https://roadmap.sh/projects/static-site-server) | asics of setting up a web server using a basic static site served using Nginx. | More documentation | [yes] |
